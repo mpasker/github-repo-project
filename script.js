@@ -8,7 +8,7 @@ $('document').ready(function() {
            console.log(repos);
            for(i in repos) {
                $('#myRepos').append(
-                   `<li><a href="${repos[i].html_url}">
+                   `<li><a href="${repos[i].html_url}" target="_blank">
                     ${repos[i].name}</a></li>`
                );
            }
