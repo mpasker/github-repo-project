@@ -6,6 +6,12 @@ $('document').ready(function() {
        $.get(endpoint, function(data) {
            repos.push(...data);
            console.log(repos);
-       });
+           for(i in repos) {
+               $('#myRepos').append(
+                   `<li><a href="${repos[i].html_url}">
+                    ${repos[i].name}</a></li>`
+               );
+           }
+       })
    });
 });
