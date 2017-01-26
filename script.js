@@ -6,7 +6,7 @@ $('document').ready(function() {
        $.get(endpoint, function(data) {
            repos.push(...data);
            console.log(repos);
-           for(i in repos) {
+           for(var i = 0; i < repos.length; i++) {
                $('#myRepos').append(
                    `<li><a href="${repos[i].html_url}" target="_blank">
                     ${repos[i].name}</a></li>`
