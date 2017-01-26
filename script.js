@@ -14,6 +14,6 @@ $('document').ready(function() {
            }
         }).fail(function() {
             alert('Error! Could not load repositories');
-        })
-    })
+        });
+    });
 });
