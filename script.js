@@ -12,6 +12,8 @@ $('document').ready(function() {
                     ${repos[i].name}</a></li>`
                );
            }
-       })
-   });
+        }).fail(function() {
+            alert('Error! Could not load repositories');
+        })
+    })
 });
